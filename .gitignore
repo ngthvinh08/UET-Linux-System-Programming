@@ -3,3 +3,6 @@ exams/
 
 # Report folder
 reports/
+
+# vscode
+.vscode/
