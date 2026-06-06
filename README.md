@@ -92,6 +92,14 @@ Topics covered:
 * POSIX APIs
 * Pthreads Library
 
+## Requirements
+
+To run and practice the exercises in this repository, you should have access to a Linux environment using one of the following options:
+
+* Install Linux as a dual-boot operating system
+* Use CentOS
+* Use Windows Subsystem for Linux (WSL)
+
 ## Repository Structure
 
 ```text
