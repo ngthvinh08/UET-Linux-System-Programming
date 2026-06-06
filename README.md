@@ -119,3 +119,7 @@ Through these exercises, students will gain practical experience in:
 ## Disclaimer
 
 This repository is intended for educational purposes only. Solutions are provided as reference implementations and should be used to support learning and understanding of Linux system programming concepts.
+
+## Author 
+
+Nguyen Thanh Vinh
