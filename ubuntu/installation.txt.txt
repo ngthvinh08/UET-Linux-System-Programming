@@ -1,1 +1,11 @@
+Link hướng dẫn cài Ubuntu: 
 https://www.youtube.com/watch?v=g0qrydSnV4g
+
+Note: 
+Một số dòng laptop Asus từ 2025 trở về trước thường dùng card wifi của MediaTek và không tương thích với driver của kernel 24.04 nên các bạn có thể cân nhắc tháo máy và lắp card của Intel - hỗ trợ tốt nhất cho Linux nhé
+
+Recommend: 
+Card Intel WiFi 6-6E AX210
+
+Trải nghiệm cá nhân:
+Con này anh từng thay ở máy cũ rồi, nó rất ngon nhé, mua thì mua trên shopee không thiếu nhưng chịu khó đọc comment xem shop đó feedback thế nào trước khi mua. Lắp thì rất dễ, youtube có hướng dẫn, không hiểu thì có thể liên hệ trực tiếp mình, mình bày cho.
