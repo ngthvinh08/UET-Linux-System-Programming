@@ -8,4 +8,4 @@ Recommend:
 Card Intel WiFi 6-6E AX210
 
 Trải nghiệm cá nhân:
-Con này anh từng thay ở máy cũ rồi, nó rất ngon nhé, mua thì mua trên shopee không thiếu nhưng chịu khó đọc comment xem shop đó feedback thế nào trước khi mua. Lắp thì rất dễ, youtube có hướng dẫn, không hiểu thì có thể liên hệ trực tiếp mình, mình bày cho.
+Con này anh từng thay ở máy cũ rồi, nó rất ngon nhé, mua thì mua trên shopee không thiếu nhưng chịu khó đọc comment xem shop đó feedback thế nào trước khi mua. Lắp thì rất dễ, youtube có hướng dẫn, không hiểu thì có thể liên hệ trực tiếp anh, anh bày cho.
