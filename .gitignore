@@ -6,3 +6,6 @@ reports/
 
 # vscode
 .vscode/
+
+# build 
+build/
