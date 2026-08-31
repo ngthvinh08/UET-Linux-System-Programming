@@ -100,6 +100,42 @@ To run and practice the exercises in this repository, you should have access to 
 * Use CentOS
 * Use Windows Subsystem for Linux (WSL)
 
+## Run and Debug a C Program
+
+For every file with the extension `.c` in this repository, you can use the same method to compile and debug it in VS Code or from the terminal.
+
+- `${fileDirname}`: directory containing the current `.c` file
+- `${fileBasenameNoExtension}`: current file name without the `.c` extension
+
+Example: if you open `example1.c` in the `Lab3` folder, the debug target is:
+
+- program: `Lab3/example1`
+- compile command: `gcc example1.c -g -o example1`
+
+### Compile the current file
+
+```bash
+gcc ${fileBasenameNoExtension}.c -g -o ${fileBasenameNoExtension}
+```
+
+### Debug configuration example
+
+```json
+{
+  "name": "Debug current C file",
+  "type": "cppdbg",
+  "request": "launch",
+  "program": "${fileDirname}/${fileBasenameNoExtension}",
+  "args": [],
+  "cwd": "${fileDirname}",
+  "externalConsole": false,
+  "MIMode": "gdb",
+  "miDebuggerPath": "/usr/bin/gdb"
+}
+```
+
+This works for all `.c` files in the project: the debugger automatically uses the folder of the opened file and the file name without `.c` as the executable name.
+
 ## Repository Structure
 
 ```text
