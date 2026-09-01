@@ -102,20 +102,40 @@ To run and practice the exercises in this repository, you should have access to 
 
 ## Run and Debug a C Program
 
-For every file with the extension `.c` in this repository, you can use the same method to compile and debug it in VS Code or from the terminal.
+For every file with the extension `.c` in this repository, you can use the same method to compile and debug it in VS Code.
 
 - `${fileDirname}`: directory containing the current `.c` file
 - `${fileBasenameNoExtension}`: current file name without the `.c` extension
 
-Example: if you open `example1.c` in the `Lab3` folder, the debug target is:
+The project is configured to build the active C file into a `build` folder inside the same directory.
 
-- program: `Lab3/example1`
-- compile command: `gcc example1.c -g -o example1`
+Example: if you open `example1.c` in the `Lab3` folder, the generated executable will be:
 
-### Compile the current file
+- program: `Lab3/build/example1`
+- compile command: `gcc example1.c -g -o build/example1`
 
-```bash
-gcc ${fileBasenameNoExtension}.c -g -o ${fileBasenameNoExtension}
+### Build task used by VS Code
+
+```json
+{
+  "label": "C/C++: gcc build active file",
+  "type": "shell",
+  "command": "bash",
+  "args": [
+    "-c",
+    "mkdir -p \"${fileDirname}/build\" && gcc -fdiagnostics-color=always -g \"${file}\" -o \"${fileDirname}/build/${fileBasenameNoExtension}\""
+  ],
+  "options": {
+    "cwd": "${fileDirname}"
+  },
+  "problemMatcher": [
+    "$gcc"
+  ],
+  "group": {
+    "kind": "build",
+    "isDefault": true
+  }
+}
 ```
 
 ### Debug configuration example
@@ -125,8 +145,10 @@ gcc ${fileBasenameNoExtension}.c -g -o ${fileBasenameNoExtension}
   "name": "Debug current C file",
   "type": "cppdbg",
   "request": "launch",
-  "program": "${fileDirname}/${fileBasenameNoExtension}",
+  "program": "${fileDirname}/build/${fileBasenameNoExtension}",
+  "preLaunchTask": "C/C++: gcc build active file",
   "args": [],
+  "stopAtEntry": true,
   "cwd": "${fileDirname}",
   "externalConsole": false,
   "MIMode": "gdb",
@@ -134,7 +156,7 @@ gcc ${fileBasenameNoExtension}.c -g -o ${fileBasenameNoExtension}
 }
 ```
 
-This works for all `.c` files in the project: the debugger automatically uses the folder of the opened file and the file name without `.c` as the executable name.
+This works for all `.c` files in the project: VS Code automatically builds the current file into a `build` folder and launches the generated executable from there.
 
 ## Repository Structure
 
