@@ -4,8 +4,5 @@ exams/
 # # Report folder
 # reports/
 
-# vscode
-.vscode/
-
 # build 
 build/
