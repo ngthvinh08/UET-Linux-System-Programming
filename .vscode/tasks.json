@@ -1,0 +1,33 @@
+{
+    "version": "2.0.0",
+
+    "tasks": [
+        {
+            "label": "C/C++: gcc build active file",
+
+            "type": "shell",
+
+            "command": "bash",
+
+            "args": [
+                "-c",
+                "mkdir -p \"${fileDirname}/build\" && gcc -fdiagnostics-color=always -g \"${file}\" -o \"${fileDirname}/build/${fileBasenameNoExtension}\""
+            ],
+
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+
+            "problemMatcher": [
+                "$gcc"
+            ],
+
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+
+            "detail": "Build current C file"
+        }
+    ]
+}
