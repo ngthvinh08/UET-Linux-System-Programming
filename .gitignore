@@ -1,11 +1,8 @@
 # Exams folder
 exams/
 
-# Report folder
-reports/
-
-# vscode
-.vscode/
+# # Report folder
+# reports/
 
 # build 
 build/
